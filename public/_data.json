@@ -1,0 +1,9 @@
+{
+    "index": {
+        "site_title": "My Project",
+        "title": "My Page Title"
+    },
+    "404": {
+        "layout": false
+    }
+}
