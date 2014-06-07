@@ -19,6 +19,16 @@ $ cd kusalakari.org
 $ harp compile . /path/to/www/public
 ```
 
+## Deployment over FTP
+
+```
+Host: ftp.kusalakari.org
+User: <username>@kusalakari.org
+Connection: FTP over TLS
+```
+
+Use FileZilla or similar ftp tool
+
 ## License
 
 MIT
