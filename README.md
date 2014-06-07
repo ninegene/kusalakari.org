@@ -1,4 +1,6 @@
-# Kusalakari.org Website
+# kusalakari.org
+
+Static web pages generator for kusalakari.org
 
 ## Development
 

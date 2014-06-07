@@ -1,7 +1,7 @@
 {
   "name": "kusalakari.org",
   "version": "0.0.0",
-  "description": "## Development",
+  "description": "static web pages generator for kusalakari.org",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
