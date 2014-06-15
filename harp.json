@@ -3,6 +3,14 @@
         "site_title": "kusalakari.org",
         "title": "အဘိဓမ္မာပို့ချချက်",
         "subtitle": "နမော တဿ ဘဂဝတော အရဟတော သမ္မာသမ္ဗုဒ္ဓဿ",
-        "analytics_account": ""
+        "pages": {
+            "abhidhamma_intro": "အဘိဓမ္မာဆောင်သည်သာ ဓမ္မကထိကအစစ်ဖြစ်",
+            "pannatti_paramattha": "ပညတ် နှင့် ပရမတ် (ပရမတ္ထတရား လေးပါး)",
+            "akusala_citta": "အကုသိုလ်စိတ် ၁၂-ပါး",
+            "akusala_citta_a": "ဆိုင်ရာ သိမှတ်ဖွယ်ရာများ",
+            "akusala_citta_b": "ဒုစရိုက် ၁ဝ ပါး",
+
+            "ref_citta_cetasika_table": "သမ္ပယောဂနည်း-သင်္ဂဟနည်း ဇယားကွက်"
+        }
     }
 }
