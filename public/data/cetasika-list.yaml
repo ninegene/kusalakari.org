@@ -1,0 +1,133 @@
+cetasika:
+    annasamanna:
+        sabba_citta_sadharana: &sabba_citta_sadharana_cetasika_list
+            a: ၁။ ဖဿ
+            b: ၂။ ဝေဒနာ
+            c: ၃။ သညာ
+            d: ၄။ စေတနာ
+            e: ၅။ ဧကဂ္ဂတာ
+            f: ၆။ ဇိဝိတိန္ဒြေ
+            g: ၇။ မနသိကာရ
+
+        pakinnaka: &pakinnaka_cetasika_list
+            a: ၁။ ဝိတက်
+            b: ၂။ ဝိစာရ
+            c: ၃။ အဓိမောက္ခ
+            d: ၄။ ဝီရိယ
+            e: ၅။ ပီတိ
+            f: ၆။ ဆန္ဒ
+
+    akusala:
+        moha_catukka: &moha_catukka_cetasika_list
+            a: ၁။ မောဟ
+            b: ၂။ အဟိရိက
+            c: ၃။ အနောတ္တပ္ပ
+            d: ၄။ ဥဒ္ဓစ္စ
+
+        lobha_tri: &lobha_tri_cetasika_list
+            a: ၁။ လောဘ
+            b: ၂။ ဒိဋ္ဌိ
+            c: ၃။ မာန
+
+        dosa_catukka: &dosa_catukka_cetasika_list
+            a: ၁။ ဒေါသ
+            b: ၂။ ဣဿာ
+            c: ၃။ မစ္ဆရိယ
+            d: ၄။ ကုက္ကုစ္စ
+
+        end_tri: &end_tri_cetasika_list
+            a: ၁။ ထိန
+            b: ၂။ မိဒ္ဓ
+            c: ၃။ ဝိစိကိစ္ဆာ
+
+    sobhana:
+        sobhana_sadharana: &sobhana_sadharana_cetasika_list
+            a: ၁။ သဒ္ဒါ
+            b: ၂။ သတိ
+            c: ၃။ ဟိရီ
+            d: ၄။ သြတ္တပ္ပ
+            e: ၅။ အလောဘ
+            f: ၆။ အဒေါသ
+            g: ၇။ တတြမဇ္စျတ္တတာ
+            h: ၈။ ကာယပဿဒ္ဓိ
+            i: ၉။ စိတ္တပဿဒ္ဓိ
+            j: ၁၀။ ကာယလဟုတာ
+            k: ၁၁။ စိတ္တလဟုတာ
+            l: ၁၂။ ကာယမုဒုတာ
+            m: ၁၃။ စိတ္တမုဒုတာ
+            n: ၁၄။ ကာယကမ္မညတာ
+            o: ၁၅။ စိတ္တကမ္မညတာ
+            p: ၁၆။ ကာယပါဂုညတာ
+            q: ၁၇။ စိတ္တပါဂုညတာ
+            r: ၁၈။ ကာယုဇုကတာ
+            s: ၁၉။ စိတ္တုဇုကတာ
+
+        virati: &virati_cetasika_list
+            a: ၁။ သမ္မာဝါစာ
+            b: ၂။ သမ္မာကမ္မန္တ
+            c: ၃။ သမ္မာအာဇီ၀
+
+        appamanna: &appamanna_cetasika_list
+            a: ၁။ ကရုဏာ
+            b: ၂။ မုဒိတာ
+
+        pannindriya: &pannindriya_cetasika_list
+            a: ၁။ ပညိန္ဒြေ
+
+###
+###
+cetasika_section: စေတသိက််ပိုင်း
+cetasika_count: စေတသိက်် ၅၂-ပါး
+
+###
+annasamanna_cetasika: အညသမာန်း စေတသိက်
+annasamanna_cetasika_count: အညသမာန်း စေတသိက် ၁၃-ပါး
+
+sabba_citta_sadharana_cetasika: သဗ္ဗစိတ္တသာဓာရဏ စေတသိက်
+sabba_citta_sadharana_cetasika_count: သဗ္ဗစိတ္တသာဓာရဏ စေတသိက် ၇-ပါး
+sabba_citta_sadharana_cetasika_list: *sabba_citta_sadharana_cetasika_list
+
+pakinnaka_cetasika: ပကိဏ်း စေတသိက်
+pakinnaka_cetasika_count: ပကိဏ်း စေတသိက် ၆-ပါး
+pakinnaka_cetasika_list: *pakinnaka_cetasika_list
+
+###
+akusala_cetasika: အကုသိုလ် စေတသိက်
+akusala_cetasika_count: အကုသိုလ် စေတသိက် ၁၄-ပါး
+akusala_cetasika: အကုသိုလ် စေတသိက်
+
+moha_catukka_cetasika: မောစတုက်
+moha_catukka_cetasika_count: မောစတုက် ၄-ပါး
+moha_catukka_cetasika_list: *moha_catukka_cetasika_list
+
+lobha_tri_cetasika: လောတြိ
+lobha_tri_cetasika_count: လောတြိ ၃-ပါး
+lobha_tri_cetasika_list: *lobha_tri_cetasika_list
+
+dosa_catukka_cetasika: ဒေါစတုက်
+dosa_catukka_cetasika_count: ဒေါစတုက် ၄-ပါး
+dosa_catukka_cetasika_list: *dosa_catukka_cetasika_list
+
+end_tri_cetasika: အဆုံးတြိ
+end_tri_cetasika_count: အဆုံးတြိ ၃-ပါး
+end_tri_cetasika_list: *end_tri_cetasika_list
+
+###
+sobhana_cetasika: သောဘဏ စေတသိက်
+sobhana_cetasika_count: သောဘဏ စေတသိက် ၂၅-ပါး
+
+sobhana_sadharana_cetasika: သောဘဏသာဓာရဏ စေတသိက်
+sobhana_sadharana_cetasika_count: သောဘဏသာဓာရဏ စေတသိက် ၁၉-ပါး
+sobhana_sadharana_cetasika_list: *sobhana_sadharana_cetasika_list
+
+virati_cetasika: ဝိရတီ စေတသိက်
+virati_cetasika_count: ဝိရတီ စေတသိက် ၃-ပါး
+virati_cetasika_list: *virati_cetasika_list
+
+appamanna_cetasika: အပ္ပမညာ စေတသိက်
+appamanna_cetasika_count: အပ္ပမညာ စေတသိက် ၂-ပါး
+appamanna_cetasika_list: *appamanna_cetasika_list
+
+pannindriya_cetasika: ပညိန္ဒြေ စေတသိက်
+pannindriya_cetasika_count: ပညိန္ဒြေ စေတသိက် ၁-ပါး
+pannindriya_cetasika_list: *pannindriya_cetasika_list

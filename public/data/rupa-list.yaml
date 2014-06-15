@@ -1,0 +1,242 @@
+rupa:
+    bhuta:  &bhuta_rupa_list
+            a: ၁။ ပထဝီ (နူးညံ့ခက်မာခြင်းသဘော)
+            b: ၂။ အာပေါ (ယိုစီးဖွဲ့စည်းခြင်းသဘော)
+            c: ၃။ တေဇော (ပူအေးခြင်းသဘော၊ အရှိန်အငွေ့သဘော)
+            d: ၄။ ဝါယော (တွန်းကန်လှုပ်ရှားထောက်မခြင်းသဘော)
+
+    upadaya:
+        pasada: &pasada_rupa_list
+            a: ၁။ စက္ခုပသာဒ (မျက်စိအကြည်)
+            b: ၂။ သောတပသာဒ (နားအကြည်)
+            c: ၃။ ဃာနပသာဒ (နှာခေါင်းအကြည်)
+            d: ၄။ ဇိဝှါပသာဒ (လျှာအကြည်)
+            e: ၅။ ကာယပသာဒ (ကိုယ်အကြည်)
+
+        gocara:  &gocara_rupa_list
+            a: ၁။ ရူပါရုံ (အဆင်း)
+            b: ၂။ သဒ္ဒါရုံ (အသံ)
+            c: ၃။ ဂန္ဓာရုံ (အနံ့)
+            d: ၄။ ရသာရုံ (အရသာ)
+            e: ၅။ ဖောဋ္ဌဗ္ဗာရုံ (ပထဝီ၊ တေဇော၊ ဝါယော)
+
+        bhava:  &bhava_rupa_list
+            a: ၁။ က္ကတ္ထိဘာ၀ (အမပုံစံဖော်ပေးသောရုပ်)
+            b: ၂။ ပုရိသဘာ၀ (အထီးပုံစံဖော်ပေးသောရုပ်)
+
+        hadaya_vatthu: &hadaya_vatthu_rupa_list
+            a: ၁။ ဟဒယဝတ္ထု (စိတ်၏နေရာရုပ်)
+
+        jivita:  &jivita_rupa_list
+            a: ၁။ ဇီဝိတရုပ် (ကံကြောင့်ဖြစ်သောရုပ်ကိုစောင့်ရောုက်သောရုပ်)
+
+        ahara: &ahara_rupa_list
+            a: ၁။ အဟာရရုပ် (အစားအသောက်၌ပါသောအဆီအနှစ်)
+
+        akasa: &akasa_rupa_list
+            a: ၁။ ပရိစ္ဆေဒ/အာကာသဓာတ် (ရုပ်ကလာပ်နှစ်ခုတွေ့ဆုံက အလိုအလျောက် ပေါ်လာသော အကြားရုပ်)
+
+        vinnatti:  &vinnatti_rupa_list
+            a: ၁။ ကာယဝိညတ္တိ (သူတပါးအား မိမိအလိုဆန္ဒကို ကိုယ်ဖြင့်သိစေသော အမူအရာရုပ်)
+            b: ၂။ ဝစီဝိညတ္တိ (သူတပါးအား မိမိအလိုဆန္ဒကို နှုတ်ဖြင့်သိစေသော အမူအရာရုပ်)
+
+        vikara:  &vikara_rupa_list
+            a: ၁။ လဟုတာရုပ် (နိပ္ဖန္နရုပ်တို့၏ ပေါ့ပါးခြင်းသဘော)
+            b: ၂။ မုဒုတာရုပ် (နိပ္ဖန္နရုပ်တို့၏ နူးညံ့ခြင်းသဘော)
+            c: ၃။ ကမ္မညတာရုပ် (နိပ္ဖန္နရုပ်တို့၏ အမှု၌ခံ့ခြင်းသဘော)
+
+        lakkhana:  &lakkhana_rupa_list
+            a: ၁။ ဥပစယရုပ် (ရုပ်၏ ရှေးဦးစွာ ဖြစ်ခြင်း)
+            b: ၂။ သန္တတိရုပ် (ရုပ်၏ အစဉ်အဆက်ဖြစ်ခြင်း)
+            c: ၃။ ဇရတာရုပ် (ရုပ်၏ ရင့်ရော်မှု)
+            d: ၄။ အနိစ္စတာရုပ် (ရုပ်၏ ပျက်စီးမှု)
+
+    nipphanna:
+        mahahbutas:  *bhuta_rupa_list
+        pasada: *pasada_rupa_list
+        gocara: *gocara_rupa_list
+        bhava:  *bhava_rupa_list
+        hadaya_vatthu: *hadaya_vatthu_rupa_list
+        jivita: *jivita_rupa_list
+        ahara: *ahara_rupa_list
+
+    anipphanna:
+        akasa: *akasa_rupa_list
+        vinnatti:  *vinnatti_rupa_list
+        vikara: *vikara_rupa_list
+        lakkhana: *lakkhana_rupa_list
+
+###
+###
+rupa_section: ရုပ််ပိုင်း
+rupa_count: ရုပ် ၂၈ပါး
+
+###
+nipphanna_and_anipphanna_rupa: နိပ္ဖန္နရုပ် နှင့် အနိပ္ဖန္နရုပ်
+nipphanna_and_anipphanna_rupa_count: နိပ္ဖန္နရုပ် ၁၈-ပါး နှင့် အနိပ္ဖန္နရုပ် ၁၀-ပါး
+
+nipphanna_rupa: နိပ္ဖန္နရုပ်
+nipphanna_rupa_count: နိပ္ဖန္နရုပ် ၁၈-ပါး
+
+anipphanna_rupa: အနိပ္ဖန္နရုပ်
+anipphanna_rupa_count: အနိပ္ဖန္နရုပ် ၁၀-ပါး
+
+###
+bhuta_and_upadaya_rupa: ဘုူတရုပ် နှင့် ဥပါဒါရုပ်
+bhuta_and_upadaya_rupa_count: ဘုူတရုပ် ၄-ပါး နှင့် ဥပါဒါရုပ် ၂၄ပါး
+
+###
+upadaya_rupa: ဥပါဒါရုပ်
+upadaya_rupa_count: ဥပါဒါရုပ် ၂၄-ပါး
+
+###
+bhuta_rupa: ဘုူတရုပ် (၀ါ) မဟာဘုတ်ရုပ်
+bhuta_rupa_count: ဘုူတရုပ် (ဝါ) မဟာဘုတ်ရုပ် ၄-ပါး
+bhuta_rupa_list: *bhuta_rupa_list
+
+pasada_rupa: ပသာဒရုပ်
+pasada_rupa_count: ပသာဒရုပ် ၅-ပါး
+pasada_rupa_list: *pasada_rupa_list
+
+gocara_rupa: ဂေါစရရုပ်
+gocara_rupa_count: ဂေါစရရုပ် ၄-ပါး
+gocara_rupa_list: *gocara_rupa_list
+
+bhava_rupa: ဘာဝရုပ်
+bhava_rupa_count: ဘာဝရုပ် ၂-ပါး
+bhava_rupa_list: *bhava_rupa_list
+
+hadaya_vatthu_rupa: ဟဒယဝတ္ထုရုပ်
+hadaya_vatthu_rupa_count: ဟဒယဝတ္ထုရုပ် ၁-ပါး
+hadaya_vatthu_rupa_list: *hadaya_vatthu_rupa_list
+
+jivita_rupa: ဇီဝိတရုပ်
+jivita_rupa_count: ဇီဝိတရုပ် ၁-ပါး
+jivita_rupa_list: *jivita_rupa_list
+
+ahara_rupa: အဟာရရုပ်
+ahara_rupa_count: အဟာရရုပ် ၁-ပါး
+ahara_rupa_list: *ahara_rupa_list
+
+akasa_rupa: ပရိစ္ဆေဒ/အာကာသဓာတ်ရုပ်
+akasa_rupa_count: ပရိစ္ဆေဒ/အာကာသဓာတ်ရုပ် ၁-ပါး
+akasa_rupa_list: *akasa_rupa_list
+
+vinnatti_rupa: ဝိညတ်ရုပ်
+vinnatti_rupa_count: ဝိညတ်ရုပ် ၂-ပါး
+vinnatti_rupa_list: *vinnatti_rupa_list
+
+vikara_rupa: ဝိကာရရုပ်
+vikara_rupa_count: ဝိကာရရုပ် ၃-ပါး
+vikara_rupa_list: *vikara_rupa_list
+
+lakkhana_rupa: လက္ခဏရုပ်
+lakkhana_rupa_count: လက္ခဏရုပ် ၄-ပါး
+lakkhana_rupa_list: *lakkhana_rupa_list
+
+###
+
+ajjhattika_and_bahira_rupa: ajjhattika_and_bahira_rupa
+ajjhattika_and_bahira_rupa_count: ajjhattika_and_bahira_rupa_count
+
+ajjhattika_rupa: ajjhattika_rupa
+ajjhattika_rupa_count: ajjhattika_rupa_count
+
+bahira_rupa: bahira_rupa
+bahira_rupa_count: bahira_rupa_count
+
+###
+
+vatthu_and_avatthu_rupa: vatthu_and_avatthu_rupa
+vatthu_and_avatthu_rupa_count: vatthu_and_avatthu_rupa_count
+
+vatthu_rupa: vatthu_rupa
+vatthu_rupa_count: vatthu_rupa_count
+
+avatthu_rupa: avatthu_rupa
+avatthu_rupa_count: avatthu_rupa_count
+
+###
+
+dvara_and_advara_rupa: dvara_and_advara_rupa
+dvara_and_advara_rupa_count: dvara_and_advara_rupa_count
+
+dvara_rupa: dvara_rupa
+dvara_rupa_count: dvara_rupa_count
+
+advara_rupa: advara_rupa
+advara_rupa_count: advara_rupa_count
+
+###
+
+indriya_and_anindriya_rupa: indriya_and_anindriya_rupa
+indriya_and_anindriya_rupa_count: indriya_and_anindriya_rupa_count
+
+indriya_rupa: indriya_rupa
+indriya_rupa_count: indriya_rupa_count
+
+anindriya_rupa: anindriya_rupa
+anindriya_rupa_count: anindriya_rupa_count
+
+###
+
+olarika_and_sukhuma_rupa: olarika_and_sukhuma_rupa
+olarika_and_sukhuma_rupa_count: olarika_and_sukhuma_rupa_count
+
+olarika_rupa: olarika_rupa
+olarika_rupa_count: olarika_rupa_count
+
+sukhuma_rupa: sukhuma_rupa
+sukhuma_rupa_count: sukhuma_rupa_count
+
+###
+
+upadinna_and_anupadinna_rupa: upadinna_and_anupadinna_rupa
+upadinna_and_anupadinna_rupa_count: upadinna_and_anupadinna_rupa_count
+
+upadinna_rupa: upadinna_rupa
+upadinna_rupa_count: upadinna_rupa_count
+
+anupadinna_rupa: anupadinna_rupa
+anupadinna_rupa_count: anupadinna_rupa_count
+
+###
+
+sanidassana_and_anidassana_rupa: sanidassana_and_anidassana_rupa
+sanidassana_and_anidassana_rupa_count: sanidassana_and_anidassana_rupa_count
+
+sanidassana_rupa: sanidassana_rupa
+sanidassana_rupa_count: sanidassana_rupa_count
+
+anidassana_rupa: anidassana_rupa
+anidassana_rupa_count: anidassana_rupa_count
+
+###
+
+gocaraggahika_and_agocaraggahika_rupa: gocaraggahika_and_agocaraggahika_rupa
+gocaraggahika_and_agocaraggahika_rupa_count: gocaraggahika_and_agocaraggahika_rupa_count
+
+gocaraggahika_rupa: gocaraggahika_rupa
+gocaraggahika_rupa_count: gocaraggahika_rupa_count
+
+asampatta_gahaka_rupa: asampatta_gahaka_rupa
+asampatta_gahaka_rupa_count: asampatta_gahaka_rupa_count
+
+sampatta_gahaka_rupa: sampatta_gahaka_rupa
+sampatta_gahaka_rupa_count: sampatta_gahaka_rupa_count
+
+agocaraggahika_rupa: agocaraggahika_rupa
+agocaraggahika_rupa_count: agocaraggahika_rupa_count
+
+###
+
+avinibbhoga_and_vinibbhoga_rupa: avinibbhoga_and_vinibbhoga_rupa
+avinibbhoga_and_vinibbhoga_rupa_count: avinibbhoga_and_vinibbhoga_rupa_count
+
+avinibbhoga_rupa: avinibbhoga_rupa
+avinibbhoga_rupa_count: avinibbhoga_rupa_count
+
+vinibbhoga_rupa: vinibbhoga_rupa
+vinibbhoga_rupa_count: vinibbhoga_rupa_count
+
+###
