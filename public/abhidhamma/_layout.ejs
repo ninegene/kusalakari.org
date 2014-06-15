@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= site_title %></title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="assets/css/themes/default/jquery.mobile-1.4.2.min.css">
+    <link rel="stylesheet" href="assets/font/font.css">
+    <link rel="stylesheet" href="assets/css/jqm-demos.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/jquery.mobile-1.4.2.min.js"></script>
+</head>
+<body>
+<div data-role="page" class="abd-page jqm-demos jqm-home" data-quicklinks="true">
+
+    <div data-role="header" class="jqm-header">
+        <h2><a href="./"><img src="assets/img/logo.png" alt="<%= title %>"></a></h2>
+        <h3><%= subtitle %></h3>
+        <a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
+        <a href="#" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-search ui-nodisc-icon ui-alt-icon ui-btn-right">Search</a>
+    </div>
+    <!-- /header -->
+
+    <div role="main" class="ui-content jqm-content">
+
+        <%- yield %>
+
+    </div>
+    <!-- /content -->
+
+    <div data-role="footer" data-position="fixed" data-tap-toggle="false" class="jqm-footer">
+        <p>
+          <a href="./assets/files/kusalakari_abhidhamma_class_note.pdf">download အဘိဓမ္မာပို့ချချက် pdf file</a>
+        </p>
+
+        <p class="text-sans"><a rel="external" href="http://kusalakari.org">kusalakari.org</a></p>
+    </div>
+    <!-- /footer -->
+
+    <div data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a">
+        <ul class="jqm-list ui-alt-icon ui-nodisc-icon">
+            <%- partial("_links") %>
+        </ul>
+    </div>
+    <!-- /panel -->
+
+    <div data-role="panel" class="jqm-search-panel" data-position="right" data-display="overlay" data-theme="a">
+        <div class="jqm-search">
+            <ul class="jqm-list" data-filter-placeholder="Search ..." data-filter-reveal="true">
+                <%- partial("_links") %>
+            </ul>
+        </div>
+    </div>
+    <!-- /panel -->
+
+</div>
+<!-- /page -->
+
+<%- partial("_analytics") %>
+
+</body>
+</html>

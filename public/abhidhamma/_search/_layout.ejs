@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= site_title %></title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link rel="stylesheet" href="../assets/font/font.css">
+    <link rel="stylesheet" href="../assets/css/themes/default/jquery.mobile-1.4.2.min.css">
+    <link rel="stylesheet" href="../assets/css/jqm-demos.css">
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/index.js"></script>
+    <script src="../assets/js/jquery.mobile-1.4.2.min.js"></script>
+</head>
+<body>
+<div data-role="page" class="jqm-demos jqm-demos-index jqm-demos-search-results">
+
+    <div data-role="header" class="jqm-header">
+        <h2><a href="../" title="<%= title %> home"><img src="../assets/img/logo.png" alt="<%= title %>"></a></h2>
+
+        <%- partial("../_header-content") %>
+    </div>
+    <!-- /header -->
+
+    <%- partial("../_search-results") %>
+
+    <%- partial("../_navmenu-panel") %>
+
+    <%- partial("../_footer") %>
+
+    <%- partial("../_search-panel") %>
+
+</div>
+<!-- /page -->
+
+</body>
+
+<%- partial("../_analytics") %>
+
+</html>

@@ -1,7 +1,8 @@
 {
-    "domains":[],
     "globals": {
         "site_title": "kusalakari.org",
-        "googleAnalytics": ""
+        "title": "အဘိဓမ္မာပို့ချချက်",
+        "subtitle": "နမော တဿ ဘဂဝတော အရဟတော သမ္မာသမ္ဗုဒ္ဓဿ",
+        "analytics_account": ""
     }
 }
