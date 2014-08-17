@@ -1,5 +1,6 @@
 var pagesLookup = (function () {
-    var keys = [], pagesLookup = {}, pages = window.pagesObj, k, i, prev, next, cur, len;
+    var keys = [], pagesLookup = {}, pages = window.pagesObj,
+        k, i, prev, next, cur, len;
 
     //console.log(pages);
 
@@ -15,13 +16,14 @@ var pagesLookup = (function () {
     len = keys.length;
 
     for (i = 0; i < len; i++) {
-        prev = keys[i - 1];
-        next = keys[i + 1];
-        cur = keys[i];
-        pagesLookup[pages[cur].link] = {
-            prev: prev && pages[prev].link,
-            next: next && pages[next].link
-        };
+        prev = keys[i - 1] ? pages[keys[i - 1]].link : null;
+        next = keys[i + 1] ? pages[keys[i + 1]].link : null;
+        cur = pages[keys[i]].link;
+
+        if (i == 0) {
+            prev = 'index.html';
+        }
+        pagesLookup[cur] = { prev: prev, next: next };
     }
 
     //console.log(JSON.stringify(pagesLookup, undefined, 2));
