@@ -4,13 +4,16 @@
         "title": "အဘိဓမ္မာပို့ချချက်",
         "subtitle": "နမော တဿ ဘဂဝတော အရဟတော သမ္မာသမ္ဗုဒ္ဓဿ",
         "pages": {
-            "abhidhamma_intro": "အဘိဓမ္မာဆောင်သည်သာ ဓမ္မကထိကအစစ်ဖြစ်",
-            "pannatti_paramattha": "ပညတ် နှင့် ပရမတ် (ပရမတ္ထတရား လေးပါး)",
-            "akusala_citta": "အကုသိုလ်စိတ် ၁၂-ပါး",
-            "akusala_citta_a": "ဆိုင်ရာ သိမှတ်ဖွယ်ရာများ",
-            "akusala_citta_b": "ဒုစရိုက် ၁ဝ ပါး",
-
-            "ref_citta_cetasika_table": "သမ္ပယောဂနည်း-သင်္ဂဟနည်း ဇယားကွက်"
+            "_": "pages's keys should be in order to correctly create previous and next page link dynamically.",
+            "a1":  {"link": "a1.html", "my": "အဘိဓမ္မာဆောင်သည်သာ ဓမ္မကထိကအစစ်ဖြစ်", "en": "abhidhamma"},
+            "a2":  {"link": "a2.html", "my": "ပညတ် နှင့် ပရမတ် (ပရမတ္ထတရား လေးပါး)", "en": "pannatti and paramattha"},
+            "a3":  {"link": null, "my": "အကုသိုလ်စိတ် ၁၂-ပါး", "en": "akusala citta"},
+            "a3a": {"link": "a3a.html", "my": "အကုသိုလ်စိတ် ၁၂-ပါး", "en": "akusala citta"},
+            "a3b": {"link": "a3b.html", "my": "ဆိုင်ရာ သိမှတ်ဖွယ်ရာများ", "en": "akusala citta"},
+            "a3c": {"link": "a3c.html", "my": "ဒုစရိုက် ၁ဝ ပါး", "en": "akusala citta"}
+        },
+        "ref_pages": {
+            "citta_cetasika_table": "သမ္ပယောဂနည်း-သင်္ဂဟနည်း ဇယားကွက်"
         }
     }
 }

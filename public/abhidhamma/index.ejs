@@ -1,43 +1,21 @@
 <h1>Home</h1>
 
-<!--
-
-<p><strong>jQuery Mobile is a touch-optimized HTML5 UI framework designed to make responsive web sites and apps that are accessible on all smartphone, tablet and desktop devices.</strong></p>
-
-<p>New to jQuery Mobile? Get started by reading this <a href="intro/" data-ajax="false">introduction</a>. For technical info, visit the <a href="http://api.jquerymobile.com"
-                                                                                                                                           title="jQuery Mobile API documentation" target="_blank">API
-    documentation</a>. Downloads and info about the project can be found on <a href="http://jquerymobile.com" title="jQuery Mobile web site" target="_blank">jquerymobile.com</a>.</p>
--->
-
 <div class="jqm-block-content">
     <h3>Table of Content</h3>
-    <p><a href="./abhidhamma_intro.html"><%= pages.abhidhamma_intro %></a></p>
-    <p><a href="./pannatti_paramattha.html"><%= pages.pannatti_paramattha %></a></p>
-    <p>
-        <a href="./akusala_citta.html" data-ajax="false"><%= pages.akusala_citta %></a>,
-        <a href="./akusala_citta_a.html" data-ajax="false"><%= pages.akusala_citta_a %></a>,
-        <a href="./akusala_citta_b.html" data-ajax="false"><%= pages.akusala_citta_b %></a>
-    </p>
+    <%- partial("_toc") %>
 </div>
 
 <div class="ui-grid-a ui-responsive">
     <div class="ui-block-a">
         <div class="jqm-block-content">
-            <h3>Reference</h3>
-
-            <p><a href="./ref/citta_cetasika_table.html" data-ajax="false"><%= pages.ref_citta_cetasika_table %></a></p>
+            <h3>Download</h3>
+            <%- partial("_download") %>
         </div>
     </div>
     <div class="ui-block-b">
         <div class="jqm-block-content">
-            <h3>Download</h3>
-
-            <p><a rel="external" href="./assets/files/kusalakari_abhidhamma_class_note.pdf">အဘိဓမ္မာပို့ချချက် pdf file</a></p>
-<!--
-            <p><a href="navigation/" data-ajax="false">Navigation</a>, <a href="transitions/" data-ajax="false">Transitions</a></p>
-            <p><a href="navigation/" data-ajax="false">Navigation</a></p>
-            <p><a href="transitions/" data-ajax="false">Transitions</a></p>
--->
+            <h3>Reference</h3>
+            <%- partial("_ref") %>
         </div>
     </div>
 </div>

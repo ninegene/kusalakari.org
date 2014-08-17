@@ -13,6 +13,10 @@
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/index.js"></script>
     <script src="assets/js/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        window.pagesObj = <%- JSON.stringify(pages) %>;
+    </script>
+    <script src="assets/js/main.js"></script>
 </head>
 <body>
 <div data-role="page" class="abd-page jqm-demos jqm-home" data-quicklinks="true">
@@ -28,6 +32,7 @@
     <div role="main" class="ui-content jqm-content">
 
         <%- yield %>
+        <%- partial("_next_prev") %>
 
     </div>
     <!-- /content -->
@@ -57,7 +62,7 @@
 </div>
 <!-- /page -->
 
-<%- partial("_analytics") %>
+<%- partial("../_analytics") %>
 
 </body>
 </html>
