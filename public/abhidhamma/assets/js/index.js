@@ -249,7 +249,10 @@ $(document).on("pagecreate", ".jqm-demos", function (event) {
     })
 
     $(".jqm-navmenu-link").on("click", function () {
-        page.find(".jqm-navmenu-panel:not(.jqm-panel-page-nav)").panel("open");
+//        page.find(".jqm-navmenu-panel:not(.jqm-panel-page-nav)").panel("open");
+        // since we use dom cache on page, there could be multiple panels
+        // so find the current page's panel and open it
+        $('.abd-page').filter(':visible').find('.jqm-navmenu-panel').panel('open')
     });
 
     // Turn off autocomplete / correct for demos search
@@ -257,7 +260,10 @@ $(document).on("pagecreate", ".jqm-demos", function (event) {
 
     // Global search
     $(".jqm-search-link").on("click", function () {
-        page.find(".jqm-search-panel").panel("open");
+//        page.find(".jqm-search-panel").panel("open");
+        // since we use dom cache on page, there could be multiple panels
+        // so find the current page's panel and open it
+        $('.abd-page').filter(':visible').find('.jqm-search-panel').panel('open');
     });
 
     // Initalize search panel list and filter also remove collapsibles
