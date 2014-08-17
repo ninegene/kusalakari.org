@@ -1,7 +1,7 @@
 var pagesLookup = (function () {
     var keys = [], pagesLookup = {}, pages = window.pagesObj, k, i, prev, next, cur, len;
 
-    console.log(pages);
+    //console.log(pages);
 
     for (k in pages) {
         if (pages.hasOwnProperty(k)) {
@@ -24,7 +24,7 @@ var pagesLookup = (function () {
         };
     }
 
-    console.log(JSON.stringify(pagesLookup, undefined, 2));
+    //console.log(JSON.stringify(pagesLookup, undefined, 2));
     return pagesLookup;
 }());
 
@@ -85,11 +85,10 @@ $(document).one("pagecreate", ".abd-page", function () {
 });
 
 $(document).on("pageshow", ".abd-page", function () {
-    var parsedUrl = $.mobile.path.parseUrl(document.URL),
-        curPageLookup = pagesLookup[parsedUrl.filename],
-        inPagesLookup = parsedUrl.filename in pagesLookup,
-        next = curPageLookup.next,
-        prev = curPageLookup.prev;
+    var curPageLookup = getCurPageLookup();
+    var hasNextPrev = inPagesLookup();
+    var next = curPageLookup && curPageLookup.next;
+    var prev = curPageLookup && curPageLookup.prev;
 
     console.log({next: next, prev: prev});
 
@@ -97,11 +96,11 @@ $(document).on("pageshow", ".abd-page", function () {
     // Prefetch the next page
     // We added data-dom-cache="true" to the page so it won't be deleted
     // so there is no need to prefetch it
-    if (inPagesLookup && next) {
+    if (hasNextPrev && next) {
         $(":mobile-pagecontainer").pagecontainer("load", next);
     }
 
-    if (inPagesLookup) {
+    if (hasNextPrev) {
         $('.next-prev').show();
     }
 
