@@ -28,12 +28,12 @@ var pagesLookup = (function () {
     return pagesLookup;
 }());
 
-function getCurPageLookup() {
+function getCurPageLookup(url) {
     var parsedUrl = $.mobile.path.parseUrl(document.URL);
     return pagesLookup[parsedUrl.filename];
 }
 
-function inPagesLookup() {
+function inPagesLookup(url) {
     var parsedUrl = $.mobile.path.parseUrl(document.URL);
     return parsedUrl.filename in pagesLookup;
 }
@@ -50,6 +50,7 @@ $(document).one("pagecreate", ".abd-page", function () {
             $(":mobile-pagecontainer").pagecontainer("change", next, {
                 transition: "slide"
             });
+            //$(":mobile-pagecontainer").pagecontainer("change", next);
         }
     }
 
@@ -61,6 +62,7 @@ $(document).one("pagecreate", ".abd-page", function () {
                 transition: "slide",
                 reverse: true
             });
+            //$(":mobile-pagecontainer").pagecontainer("change", prev);
         }
     }
 
@@ -68,15 +70,13 @@ $(document).one("pagecreate", ".abd-page", function () {
     $(document).on("swipeleft", ".abd-page", function (event) {
           navNextPage();
     });
+    $(document).on("swiperight", ".abd-page", function (event) {
+        navPrevPage();
+    });
+
     // Navigate to the next page when the "next" button is clicked
     $(document).on("click", ".next", function () {
         navNextPage();
-    });
-
-    // The same for the navigating to the previous page
-    $(document).on("swiperight", ".abd-page", function (event) {
-          // if (prev && (event.target === $(this)[0])) {
-          navPrevPage();
     });
     $(document).on("click", ".prev", function () {
           navPrevPage();
@@ -96,7 +96,9 @@ $(document).on("pageshow", ".abd-page", function () {
     // We added data-dom-cache="true" to the page so it won't be deleted
     // so there is no need to prefetch it
     if (hasNextPrev && next) {
-        $(":mobile-pagecontainer").pagecontainer("load", next);
+        // comment out loading next page
+        // because this causes issue when opening left toc side panel and right search panel
+        //$(":mobile-pagecontainer").pagecontainer("load", next);
     }
 
     if (hasNextPrev) {

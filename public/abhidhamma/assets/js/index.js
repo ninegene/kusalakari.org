@@ -43,6 +43,10 @@
             //scroll to the id
             var pos = hashEl.offset().top;
             $.mobile.silentScroll(pos);
+            // hack to fix when click on "Top" link the html part filename get removed
+            if (hash == '#ui-page-top') {
+                hash = $.mobile.path.parseUrl(document.URL).filename + hash
+            }
             $.mobile.navigate(hash, '', true);
 
         } else if (typeof f.toPage !== "object" &&
