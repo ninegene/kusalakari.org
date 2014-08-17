@@ -41,8 +41,7 @@ function inPagesLookup() {
 // Pagecreate will fire for each of the pages but we only need to bind once so we use "one()"
 $(document).one("pagecreate", ".abd-page", function () {
 
-    if (!inPagesLookup())
-        return;
+    console.log(new Date() + ': page created once');
 
     function navNextPage() {
         var curPageLookup = getCurPageLookup();
@@ -117,3 +116,26 @@ $(document).on("pageshow", ".abd-page", function () {
         $(".prev").addClass("ui-state-disabled");
     }
 });
+
+
+$(document).on('DOMNodeInserted', function(e) {
+    if (e.target.nodeName.toLowerCase() == 'script') {
+        var $ele = $(e.target);
+        console.log('going to remove on DOMNodeInserted ' + ($ele.attr('src') || $ele.html()));
+        $ele.remove();
+    }
+});
+
+$(document).ready(function () {
+    setTimeout(function () {
+        $('script').each(function () {
+            var src = $(this).attr('src');
+            var html = $(this).html();
+            if (/(lexity\.com|yimg\.com)/.test(src) || /(geovisit|YWAGTracker)/.test(html)) {
+                console.log('going to remove ' + (src || html));
+                $(this).remove();
+            }
+        });
+    }, 100);
+});
+
