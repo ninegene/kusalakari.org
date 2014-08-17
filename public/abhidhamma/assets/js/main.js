@@ -47,10 +47,10 @@ $(document).one("pagecreate", ".abd-page", function () {
         var curPageLookup = getCurPageLookup();
         var next = curPageLookup && curPageLookup.next;
         if (next) {
-            $(":mobile-pagecontainer").pagecontainer("change", next, {
-                transition: "slide"
-            });
-            //$(":mobile-pagecontainer").pagecontainer("change", next);
+//            $(":mobile-pagecontainer").pagecontainer("change", next, {
+//                transition: "slide"
+//            });
+            $(":mobile-pagecontainer").pagecontainer("change", next);
         }
     }
 
@@ -58,11 +58,11 @@ $(document).one("pagecreate", ".abd-page", function () {
         var curPageLookup = getCurPageLookup();
         var prev = curPageLookup && curPageLookup.prev;
         if (prev) {
-            $(":mobile-pagecontainer").pagecontainer("change", prev, {
-                transition: "slide",
-                reverse: true
-            });
-            //$(":mobile-pagecontainer").pagecontainer("change", prev);
+//            $(":mobile-pagecontainer").pagecontainer("change", prev, {
+//                transition: "slide",
+//                reverse: true
+//            });
+            $(":mobile-pagecontainer").pagecontainer("change", prev);
         }
     }
 
@@ -92,9 +92,8 @@ $(document).on("pageshow", ".abd-page", function () {
     console.log({next: next, prev: prev});
 
     document.title = $(".abd-page h1:visible").text() + ' - kusalakari.org';
+
     // Prefetch the next page
-    // We added data-dom-cache="true" to the page so it won't be deleted
-    // so there is no need to prefetch it
     if (hasNextPrev && next) {
         // comment out loading next page
         // because this causes issue when opening left toc side panel and right search panel
