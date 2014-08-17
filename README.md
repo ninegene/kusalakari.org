@@ -16,7 +16,7 @@ Browse to `http://localhost:9999/`
 
 ```
 $ cd kusalakari.org
-$ harp compile /path/to/this-project /compiled/kusalakari.org
+$ harp compile . /tmp/kusalakari.org
 ```
 
 ## Deployment over FTP
