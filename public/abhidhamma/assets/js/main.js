@@ -28,12 +28,12 @@ var pagesLookup = (function () {
     return pagesLookup;
 }());
 
-function getCurPageLookup(url) {
+function getCurPageLookup() {
     var parsedUrl = $.mobile.path.parseUrl(document.URL);
     return pagesLookup[parsedUrl.filename];
 }
 
-function inPagesLookup(url) {
+function inPagesLookup() {
     var parsedUrl = $.mobile.path.parseUrl(document.URL);
     return parsedUrl.filename in pagesLookup;
 }
