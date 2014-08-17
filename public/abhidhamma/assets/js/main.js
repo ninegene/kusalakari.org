@@ -117,7 +117,8 @@ $(document).on("pageshow", ".abd-page", function () {
     }
 });
 
-
+// Try to remove tracking scripts added by Yahoo host
+// Because in some cases, it slows down page loading
 $(document).on('DOMNodeInserted', function(e) {
     if (e.target.nodeName.toLowerCase() == 'script') {
         var $ele = $(e.target);
@@ -125,7 +126,6 @@ $(document).on('DOMNodeInserted', function(e) {
         $ele.remove();
     }
 });
-
 $(document).ready(function () {
     setTimeout(function () {
         $('script').each(function () {
@@ -139,3 +139,33 @@ $(document).ready(function () {
     }, 100);
 });
 
+window.ycsdone = 1; // disable geovisit() tracking
+
+/*
+var ycsdone;
+function geovisit()
+{
+    var z;
+    if (ycsdone)
+        return;
+    z="&r="+escape(document.referrer);
+    z=z+"&b="+escape(navigator.appName+" "+navigator.appVersion);
+    w=parseFloat(navigator.appVersion);
+    if (w > 2.0) {
+        z=z+"&s="+screen.width+"x"+screen.height;
+        z=z+"&o="+navigator.platform;
+        v="1.2";
+        if (navigator.appName != "Netscape") {
+            z=z+"&c="+screen.colorDepth;
+        } else {
+            z=z+"&c="+screen.pixelDepth
+        }
+        z=z+"&j="+navigator.javaEnabled();
+    } else {
+        v=1.0;
+    }
+    z=z+"&v="+v;
+    document.writeln("<img border=\"0\" style=\"display:none\" src=\"http://visit.webhosting.yahoo.com/visit.gif?"+z+"\">");
+    ycsdone=1;
+}
+*/
