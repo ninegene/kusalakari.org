@@ -10,7 +10,8 @@
             "a3":  {"link": null, "my": "အကုသိုလ်စိတ် ၁၂-ပါး", "en": "akusala citta"},
             "a3a": {"link": "a3a.html", "my": "အကုသိုလ်စိတ် ၁၂-ပါး", "en": "akusala citta"},
             "a3b": {"link": "a3b.html", "my": "ဆိုင်ရာ သိမှတ်ဖွယ်ရာများ", "en": "akusala citta"},
-            "a3c": {"link": "a3c.html", "my": "ဒုစရိုက် ၁ဝ ပါး", "en": "akusala citta"}
+            "a3c": {"link": "a3c.html", "my": "ဒုစရိုက် ၁ဝ ပါး", "en": "akusala citta"},
+            "a4": {"link": "a4.html", "my": "အဟိတ်စိတ် ၁၈-ပါး", "en": "ahetuka citta"}
         },
         "ref_pages": {
             "citta_cetasika_table": "သမ္ပယောဂနည်း-သင်္ဂဟနည်း ဇယားကွက်"
