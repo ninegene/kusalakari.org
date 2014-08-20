@@ -29,6 +29,11 @@ Connection: FTP over TLS
 
 Use FileZilla or similar ftp tool
 
+## ToDos
+
+* Limit the jQuery Mobile Dom Cache (right now we are caching all pages,
+  it could be a problem if we have a lot of pages in the future)
+
 ## License
 
 MIT
