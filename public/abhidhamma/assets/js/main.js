@@ -49,10 +49,10 @@ $(document).one("pagecreate", ".abd-page", function () {
         var curPageLookup = getCurPageLookup();
         var next = curPageLookup && curPageLookup.next;
         if (next) {
-//            $(":mobile-pagecontainer").pagecontainer("change", next, {
-//                transition: "slide"
-//            });
-            $(":mobile-pagecontainer").pagecontainer("change", next);
+            $(":mobile-pagecontainer").pagecontainer("change", next, {
+                transition: "slide"
+            });
+            //$(":mobile-pagecontainer").pagecontainer("change", next);
         }
     }
 
@@ -60,11 +60,11 @@ $(document).one("pagecreate", ".abd-page", function () {
         var curPageLookup = getCurPageLookup();
         var prev = curPageLookup && curPageLookup.prev;
         if (prev) {
-//            $(":mobile-pagecontainer").pagecontainer("change", prev, {
-//                transition: "slide",
-//                reverse: true
-//            });
-            $(":mobile-pagecontainer").pagecontainer("change", prev);
+            $(":mobile-pagecontainer").pagecontainer("change", prev, {
+                transition: "slide",
+                reverse: true
+            });
+            //$(":mobile-pagecontainer").pagecontainer("change", prev);
         }
     }
 
