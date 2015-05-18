@@ -5,7 +5,7 @@
 
 body{
   width: 100%;
-  padding: 20px;
+  padding: 2px;
   margin: 0;
   color: #333;
 }
@@ -14,15 +14,16 @@ body{
   width: 100%;
   padding:0;
   margin:0;
-  padding-right: 130px;
-  margin-right: 10px;
-  // border: 1px solid red
+  //max-width: 1024px;
+  // border: 1px solid /red
 }
 
 table {
   width: 100%;
   border-collapse:collapse;
   border: 1px solid #ccc;
+  //table-layout: fixed;
+  width: 1020px;
   padding-right: 0px;
   margin-right: 0px;
 }
@@ -41,7 +42,7 @@ h1, div, table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr
 }
 
 h1 {
-  text-align: lef;
+  text-align: left;
   font-size: 24px;
   padding: 0 0 10px 0;
   margin: 0;
@@ -50,7 +51,46 @@ h1 {
 td, th {
   text-align: center;
   border: 1px solid #ccc;
-  padding: 10px;
+  padding: 3px 5px;
+  max-width: 30px;
+  &:hover {
+    cursor: pointer;
+    //color: blue;
+    //font-weight: bolder;
+  }
+}
+
+tr.cesatika-group-1 {
+  //width: 75px;
+}
+
+tr.cesatika-group-1 td:first-child, tr.cesatika-group-1 th:first-child {
+  width: 75px;
+}
+
+tr.cesatika-group-1 td:first-child,
+tr.cesatika-group-2 td:first-child,
+tr.cesatika-group-3 td:first-child,
+{
+  &:hover {
+    //color: blue;
+  }
+}
+
+tr.cesatika-group-2 {
+  //width: 75px;
+}
+
+tr.cesatika-group-3 {
+  //width: 75px;
+}
+
+.cesatika-group-3_19 {
+  font-size: 90%;
+}
+
+.cesatika-group-2 td[colspan="16"], .cesatika-group-2-placeholder td[colspan="16"] {
+  cursor: pointer;
 }
 
 td.noborder {
@@ -66,7 +106,7 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
   background: #f9f9f9;
   text-align: center;
   vertical-align: bottom;
-  height: 180px;
+  height: 140px;
   padding: 5px;
 }
 
@@ -76,11 +116,15 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
   vertical-align: middle;
   width: 20px;
   margin: 0;
-  padding: 3px;
+  padding: 0px;
   white-space: nowrap;
   transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
+}
+
+.cesatika-count {
+  display: none;
 }
 
 .cesatika-count td {

@@ -8,6 +8,36 @@
 <body>
   <%- yield %>
 
+  <script src="../assets/js/jquery-1.10.2.min.js"></script>
+  <script>
+    $(".cesatika-group-2 td[colspan=16]").on("click", function() {
+//      $(".cesatika-group-2").slideUp(800, function() {
+//        $(".cesatika-group-2-placeholder").slideDown(800);
+//        $(".cesatika-group-3_19").show();
+//      });
+        $(".cesatika-group-2").hide();
+        $(".cesatika-group-2-placeholder").show();
+    });
+
+    $(".cesatika-group-2-placeholder td[colspan=16]").on("click", function() {
+//      $(".cesatika-group-2-placeholder").slideUp(800, function() {
+//        $(".cesatika-group-2").slideDown(800);
+//        $(".cesatika-group-3_19").hide();
+//      });
+      $(".cesatika-group-2").show();
+      $(".cesatika-group-2-placeholder").hide();
+    });
+
+//    $("tr.cesatika-group-2").on("click", function() {
+//        $(".cesatika-group-2").hide();
+//        $(".cesatika-group-2-placeholder").show();
+//    });
+//
+//    $("tr.cesatika-group-2-placeholder").on("click", function() {
+//      $(".cesatika-group-2").show();
+//      $(".cesatika-group-2-placeholder").hide();
+//    });
+  </script>
   <%- partial('../_analytics') %>
 </body>
 </html>
