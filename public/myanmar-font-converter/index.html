@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <title>Myanmar Font Converter</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- disable user zooming. use with caution -->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="assets/css/fonts/fonts.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elstrongents and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Myanmar Font Converter</h1>
+
+    <div class="row">
+        <div id="src" class="col-md-12">
+            <div class="form-group">
+                <label class="control-label">From </label>
+                <select class="form-control">
+                    <!--<option value="charcode">Char Codes (separated by comma)</option>-->
+                    <!--<option value="codepoint">\u Code Points (separated by comma)</option>-->
+                    <option value="wininnwa" selected>Win Innwa (ASCII Encoded)</option>
+                    <option value="unicode">Unicode (Myanmar3, Paudauk etc.)</option>
+                    <option value="zawgyi">ZawGyi-One (Partial Unicode)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" rows="7"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 btn-container">
+            <div class="form-group">
+                <button id="btn-convert" type="button" class="btn btn-primary">Convert</button>
+                <!--<button id="btn-switch" type="button" class="btn btn-info">Switch Panel</button>-->
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="dst" class="col-md-12">
+            <div class="form-group">
+                <label class="control-label">To </label>
+                <select class="form-control">
+                    <!--<option value="charcode">Char Codes (separated by comma)</option>-->
+                    <!--<option value="codepoint">\u Code Points (separated by comma)</option>-->
+                    <option value="wininnwa">Win Innwa (ASCII Encoded)</option>
+                    <option value="unicode" selected>Unicode (Myanmar3, Paudauk etc.)</option>
+                    <option value="zawgyi">ZawGyi-One (Partial Unicode)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" rows="10"></textarea>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/jquery-1.10.2.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/fromCodePoint.js"></script>
+<script src="assets/js/mmconv.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

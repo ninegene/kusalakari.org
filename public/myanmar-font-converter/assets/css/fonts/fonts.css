@@ -1,0 +1,46 @@
+/* Ascii Encode */
+
+@font-face {
+    font-family: 'Win Innwa';
+    src: local('Win Innwa'), url('wininnwa.ttf');
+}
+
+/* Unicode */
+
+@font-face {
+    font-family: 'Zawgyi-One';
+    src: local('Zawgyi-One'), url('zawgyi.ttf');
+}
+
+@font-face {
+    font-family:'Masterpiece Uni Sans';
+    src:local('Masterpiece Uni Sans'), url('masterpiece.ttf');
+}
+
+@font-face {
+    font-family: 'Myanmar3';
+    src: local('Myanmar3'), url('myanmar3.ttf');
+}
+
+/*
+@font-face {
+    font-family: 'MON3 Anonta 1';
+    src: local('MON3 Anonta 1'), url('mon3.ttf');
+}
+
+@font-face {
+    font-family: 'Uni Mon';
+    src: local('Uni Mon'), url('unimon.ttf');
+}
+
+@font-face {
+    font-family: 'Padauk';
+    src: local('Padauk'), url('padauk.ttf');
+}
+
+@font-face {
+    font-family: 'Yunghkio';
+    src: local('Yunghkio'), url('yunghkio.ttf');
+}
+
+*/

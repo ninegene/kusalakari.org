@@ -1,0 +1,24 @@
+
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.btn-container {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+#src label, #dst label {
+    font-size: 1.2em;
+    color: #555;
+}
+
+#src textarea, #dst textarea {
+    line-height: 1.8em;
+}
+
+#src textarea.wininnwa, #dst textarea.wininnwa {
+    line-height: 1em;
+}
